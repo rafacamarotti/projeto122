@@ -5,7 +5,8 @@ drawRect="";
 SpeechRecognition = window.webkitSpeechRecognition;
 recognition = new SpeechRecognition();
 function preload(){
-carro= loadImage("
+carro= loadImage("images.jpg");
+pessoa = loadImage("
 }
 function start(){
     document.getElementById("status").innerHTML = "O sistema está ouvindo. Por favor, fale.";
