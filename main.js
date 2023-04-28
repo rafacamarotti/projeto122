@@ -6,7 +6,7 @@ SpeechRecognition = window.webkitSpeechRecognition;
 recognition = new SpeechRecognition();
 function preload(){
 carro= loadImage("images.jpg");
-pessoa = loadImage("
+pessoa = loadImage("png-clipart-silhouette-person-man-silhouette-angle-text.png");
 }
 function start(){
     document.getElementById("status").innerHTML = "O sistema está ouvindo. Por favor, fale.";
@@ -35,13 +35,13 @@ function setup(){
 function draw(){
     if(drawCircle == "set"){
         radius = Math.floor(Math.random()* 100);
-        image()
-        document.getElementById("status").innerHTML= "círculo desenhado. ";
+        image(carro, x, y, 70, 70);
+        document.getElementById("status").innerHTML= "carro desenhado. ";
         drawCircle = ""
     }
     if(drawRect == "set"){
-       rect(x,y,70,50);
-       document.getElementById("status").innerHTML= "Retângulo desenhado. ";
+       image(pessoa, x, y, 70, 70);
+       document.getElementById("status").innerHTML= "pessoa desenhado. ";
        drawRect = "";
     }
 }
